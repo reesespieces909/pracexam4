@@ -2,4 +2,5 @@
 
 int main() {
     Game game;
-    game.initGame(3, 5, 
+    game.initGame(3, 5,)
+}
