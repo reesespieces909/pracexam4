@@ -1,8 +1,14 @@
 #include "Game.h"
 
 int main() {
+    
     Game game;
-    game.initGame(3, 5, 10, 10);
-    game.gameLoop(100, 5.0);
+
+    
+    game.initGame(2, 3, 5, 5);
+
+    
+    game.gameLoop(10, 2.0);
+
     return 0;
 }
