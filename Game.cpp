@@ -32,7 +32,7 @@ void Game::gameLoop(int maxIterations, double trapActivationDistance) {
             }
         }
 
-        // Check for nearby traps and apply required effect
+        // Check for nearby traps and apply the effect
         for (Cell* cell : grid) {
             Character* character = dynamic_cast<Character*>(cell);
             if (character != nullptr) {
@@ -50,7 +50,7 @@ void Game::gameLoop(int maxIterations, double trapActivationDistance) {
             }
         }
 
-        // Iff character has stepped outside 
+        // Check if any character has stepped outside of the grid
         for (Cell* cell : grid) {
             Character* character = dynamic_cast<Character*>(cell);
             if (character != nullptr) {
@@ -65,4 +65,5 @@ void Game::gameLoop(int maxIterations, double trapActivationDistance) {
         }
     }
 
-    std::cout
+    std::cout << "Maximum number of iterations reached. Game over." << std::endl;
+}
