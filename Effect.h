@@ -8,4 +8,4 @@ public:
     virtual void apply(Cell& cell) = 0;
 };
 
-#endif  // EFFECT_H
+#endif  
